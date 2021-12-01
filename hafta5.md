@@ -23,8 +23,16 @@ Her zaman tam benzerlik bulamayabiliriz. Dinamik programlama
 
 Bir dokunun DNA analizini yapılma süreci:
 
-Olmayan şey: Dokuda 3 milyarlık DNA'yı olduğu gibi gören mikroskop yok
+Olmayan şey: Dokuda 3 milyarlık DNA'yı olduğu gibi gören mikroskop 
 
+Text: uzunluğu 3.2 milyar bp
 
-00:00 - 22:14
-32:25 - 
+Pattern: uzunluğu 150 bp
+
+Tam benzerlik yetmiyor. DNA'ların tamamı aynı olamaz. Yaklaşık benzerlik bulma da yapmamız lazım. 
+
+**Longest common subsequence problem**
+
+Dinamik programlama
+- Smith Waterman algoritması: İki sekans arasındaki küçük ve ortak özellikleri arar. Örnek: Bezelye ile Çam dna'sını aldınız diyelim ortak kısımları aramaya yarar.
+- Needleman Wunsh algoritması:  İki sekansının yüzde kaç benzeştiğini verebilir.
