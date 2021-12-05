@@ -56,3 +56,9 @@ Vücudumuzdaki yapıları oluşturan
 25000 gen mevcut 
 
 mirna - gen regülasyonu
+
+---
+
+[<< Geri](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/README.md)
+
+[>> İleri](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta2.md)
