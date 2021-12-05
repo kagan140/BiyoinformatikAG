@@ -46,7 +46,10 @@ mRNA ribozoma geldiğinde, ribozom mRNA'daki bilgiye göre genetik kodu üretir.
 ![](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/imgs/genetikkod.png?raw=true)
 
 **AUG:** START
+
 **UAA-UAG-UGA:** STOP
+
+64 ihtimalimiz var ama ((_ _ _) -> 4.4.4=64) ama 20 çeşit protein var, sebebi biyolojik...
 
 ---
 
