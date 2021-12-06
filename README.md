@@ -16,9 +16,15 @@ Hataları belirtmek ya da katkıda bulunmak için pull request atabilirsiniz.
 |[Hafta 6](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta6.md)| [Hamming Distance](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta6.md#hamming-distance)| 
 | |[Edit Distance: Recursive](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta6.md#edit-distance-recursive)|
 | |[Edit Distance: Dynamic Programming](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta6.md#edit-distance-dynamic-programming)|
-|[Hafta 7](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta7.md)| 
+|[Hafta 7](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta7.md)| [The Change Problem - Bozuk Para Problemi: Recurrence](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta7.md#the-change-problem---bozuk-para-problemi-recurrence)|
+| |[The Change Problem - Bozuk Para Problemi: Dynamic Programming](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta7.md#the-change-problem---bozuk-para-problemi-dynamic-programming)|
+| |[Longest Common Subsequence (LCS)](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta7.md#longest-common-subsequence-lcs)|
+| |[Distance Between Strings - Metinler Arası Fark](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta7.md#distance-between-strings---metinler-arası-fark)|
 |[Hafta 8](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta8.md)|
 |[Hafta 9](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta9.md)| 
+
+
+
 
 
 
