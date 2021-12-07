@@ -21,6 +21,8 @@ Yani basitçe bir dizginin diğer dizgiden ne kadar farklı olduğunu gösterir.
 - 100011101 <-> 100101101 = 2
 - düğün <-> düşün = 1
 
+---
+
 ### Edit Distance: Recursive
 
 #### Sözde Kod:
@@ -33,8 +35,11 @@ Yani basitçe bir dizginin diğer dizgiden ne kadar farklı olduğunu gösterir.
 
 Formüllerde veya kodda kastedilen şey şudur:
 
-- Kırmızı çarpının değeri yeşil oklardan gelirken ceza/ödül alarak ya da diagonelden (mavi ok) gelerek, en küçük sonuç hangisi olduğuna göre belirlenir.
-
+- Kırmızı çarpının değeri 
+  - Yeşil oklardan gelirken ceza/ödül alarak
+  - Diagonelden (mavi ok) gelerek
+ en küçük sonuç hangisi olduğuna göre belirlenir.
+ 
 ![image](https://user-images.githubusercontent.com/12685802/144857749-ada7effe-ba9b-4b1c-8aa1-f00ee41e5968.png)
 
 Bazı alt ağaçlar tekrarlanır. Bu istenilen bir durum değildir.
