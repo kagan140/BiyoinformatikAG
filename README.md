@@ -22,11 +22,10 @@ Hataları belirtmek ya da katkıda bulunmak için pull request atabilirsiniz.
 | |[Distance Between Strings - Metinler Arası Fark](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta7.md#distance-between-strings---metinler-arası-fark)|
 | |[Alignment: Dynamic Programming](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta8.md#alignment-dynamic-programming)|
 | |[Local Alignment - Local Hizalama](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta8.md#local-alignment---local-hizalama)|
-|[Hafta 9](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta9.md)| 
-
-
-
-
+|[Hafta 9](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta9.md)| [K-mer Index (L-mer Index)](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta9.md#k-mer-index-l-mer-index)|
+| |[Blast Algoritması](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta9.md#blast-algoritması)|
+| |[Motif Bulma Problemi](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta9.md#motif-bulma-problemi)|
+| |[Gold Bug Problem](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta9.md#gold-bug-problem)|
 
 ---
 
