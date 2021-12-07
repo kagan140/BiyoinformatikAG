@@ -128,7 +128,7 @@ Bu iki işlem sürekli devam ettirilir:
 - na$bana
 - nana$ba
 - banana$
-**- $banana**
+- **$banana**
 - ana$ban
 - anana$b
 
