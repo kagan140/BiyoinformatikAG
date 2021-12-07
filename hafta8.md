@@ -142,6 +142,8 @@ Global Alignmentta backtracking için sağ alttaki değere bakılırken Local Al
 
 ![image](https://user-images.githubusercontent.com/12685802/144990528-fe50dec3-6457-4a20-9e31-ff01c6507bc2.png)
 
+#### BLOSUM Matrix Örneği:
+![image](https://user-images.githubusercontent.com/12685802/145000693-dc5bbda3-1548-4490-9861-4393ee41c968.png)
 
 ---
 [<< Geri](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta7.md)
