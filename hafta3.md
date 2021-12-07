@@ -65,7 +65,7 @@ ACAT ACGACACAGT içerisinde ACACAGT arıyoruz.
 
 Eşleşme olmayan karakterden önceki karakterin prefix değerine bakıp eşleşen karakter sayısı kadar çıkarıyoruz. Bulduğumuz sonuç ilerleme sayımızdır. 
 
-Örnekleğe bakalım:
+Örneklere bakalım:
 
 İlk üç karakter eşleşiyor.
 
