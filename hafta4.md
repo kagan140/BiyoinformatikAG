@@ -26,7 +26,7 @@ Paralel çalıştırmayı sağlar.
 #### Bitmask table oluşturma.
 Shift-OR algoritması içindir.
 
-![image](https://user-images.githubusercontent.com/12685802/144756545-086ab0d6-3828-4a9a-80f7-93b1e0e8b6f3.png)
+![image](https://user-images.githubusercontent.com/12685802/147957316-9a05bb14-750d-49fb-bb26-699be49155cf.png)
 
 #### Algoritmanın İşleyişi
 
@@ -41,6 +41,11 @@ Shift-OR algoritması içindir.
 #### Örnek
 
 ![image](https://user-images.githubusercontent.com/12685802/144767843-153918c4-3c62-47bf-b520-ac81884af6d3.png)
+
+Aranan Pattern: aaba
+
+- a'nın maskesi: 0100
+- b'nin maskesi: 1011
 
 State (başlangıç), D: 1111 
 
@@ -137,6 +142,7 @@ D << 1: State'e 1 karakter left shiftliyoruz. 000 oluyor.
 
 Ve 011 | 000 = 011, en soldaki bit 0 olduğundan eşleşme var.
 
+---
 
 BNDM algoritması
 
