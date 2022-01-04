@@ -38,6 +38,7 @@ Formüllerde veya kodda kastedilen şey şudur:
 - Kırmızı çarpının değeri 
   - Yeşil oklardan gelirken ceza/ödül alarak
   - Diagonelden (mavi ok) gelerek
+ 
  en küçük sonuç hangisi olduğuna göre belirlenir.
  
 ![image](https://user-images.githubusercontent.com/12685802/144857749-ada7effe-ba9b-4b1c-8aa1-f00ee41e5968.png)
@@ -91,6 +92,7 @@ Bu şekilde her kutucuk dolduruldutkan sonraki tablonun görseli:
 
 ![image](https://user-images.githubusercontent.com/12685802/144863748-a7896dfc-057a-4bf5-8665-e94273a766b3.png)
 
+![image](https://user-images.githubusercontent.com/12685802/148016601-4d546b70-5149-4674-8d87-55665164bd0f.png)
 
 ---
 
