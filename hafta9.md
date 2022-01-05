@@ -21,6 +21,8 @@ Her şey klasik dinamik programlama ile icra ediliyor.
 
 ### K-mer Index (L-mer Index)
 
+https://www.youtube.com/watch?v=2UsmUgJtwAI
+
 ![image](https://user-images.githubusercontent.com/12685802/145002314-d1e2a040-2d5d-4555-b9fc-006d0cc4c411.png)
 
 
@@ -30,7 +32,9 @@ AATG aranacak olsa: FM index (burrows-wheeler) işe yarar.
 
 İkili arama benim için daha kolay. FM Index ikili arama nedeniyle avantajlı.
 
-k-mer için k değerimiz 4
+k-mer için k değerimiz 4 (kelimenin kaç karakterden oluştuğu)
+
+Rastgele veriler oluşturalım, ve bunlara numara verelim:
 
 - ACTC 0
 - CTCG 1
@@ -39,6 +43,8 @@ k-mer için k değerimiz 4
 - AATG 12
 
 Bu verileri işleme tabii tutmadan önce sıralasam, ikili aramayı kolayca yapabilirim.
+
+- Şimdi daha doğru veriler oluşturma vakti:
 
 Varsayım A=0, T=1, G=2, C=3 olsun.
 
@@ -50,9 +56,10 @@ Varsayım A=0, T=1, G=2, C=3 olsun.
 - ...
 - AATG: 6
 - ...
-- ACTC: 0 * 4^3 + 3 * 4^2 + 1 * 4^1 + 3 * 4^0  = 0 + 48 + 4 + 3 = 55 ==> 0, 16, 55 (nerelerde bulunduğu)
+- ACTC: 0 * 4^3 + 3 * 4^2 + 1 * 4^1 + 3 * 4^0  = 0 + 48 + 4 + 3 = 55
+  - ==> 0, 16, 55 (ACTC'nin nerelerde bulunduğu)
 - ...
-
+- CCCC:: 256 
 ---
 
 ### Blast Algoritması
@@ -91,6 +98,61 @@ Aradığımızı bilmeme sebebimiz mutasyonlar. 600 nükleotid uzunluğnuda olan
 Üstte yazdığımız örnek için (15,4) motif problemi denir.
 
 ### Gold Bug Problem
+
+Altın Böcek, Edgar Allan Poe tarafından yazılmış kısa hikâyedir. Güney Karolina'daki Sullivan's Island'da geçen öyküde, altın rengi bir böcek tarafından sokulan William Legrand, onun hizmetkârı Jupiter ve adı belirsiz bir anlatıcı tarafından yaşanan olaylar anlatılır. Şifreli bir mesajı deşifre eden Legrand, diğer iki kişiyle birlikte mesajda sözü geçen gömülü hazineyi bulmaya çalışır.
+
+```
+53‡‡†305))6*;4826)4‡.)4‡);806*;48†8
+¶60))85;1‡(;:‡*8†83(88)5*†;46(;88*96
+*?;8)*‡(;485);5*†2:*‡(;4956*2(5*—4)8
+¶8*;4069285);)6†8)4‡‡;1(‡9;48081;8:8‡
+1;48†85;4)485†528806*81(‡9;48;(88;4
+(‡?34;48)4‡;161;:188;‡?;
+```
+
+Bu şifreyi çözebilmek için ilk başta frekans sayılarına göre eşleştirme yapabiliriz.
+
+İngilizcede en çok kullanılan karakter 'e', böylece metinde en çok geçen karakteri 'e' ile eşleştirebiliriz.
+
+![image](https://user-images.githubusercontent.com/12685802/148171592-af271cd7-f467-4fe6-adff-015d363bae95.png)
+
+Bu eşleştirmeyi yaptıktan sonra şöyle bir cevap gelir:
+
+![image](https://user-images.githubusercontent.com/12685802/148171714-cd2ed788-ab53-41f6-928b-f9d4bcd959d1.png)
+
+Mantıklı bir cevap üretmedi.
+
+Bunun üzerine şöyle bir şey katabiliriz:
+
+![image](https://user-images.githubusercontent.com/12685802/148171876-3622df38-b5c1-4b7f-ae55-479e61bd4a48.png)
+
+Yani tek karakterlere bakmaktansa kısa karakterlere bakılabilir. (mesela the)
+
+Ve metinde ;48 en çok tekrar eden üçlü, `8 --> e, ; --> t` bu karakterler the olabilir.
+
+Daha sonra bu metin üzerinde tahminler yürütmeye çalışsam:
+
+![image](https://user-images.githubusercontent.com/12685802/148172127-145cb2d6-3baf-4fa7-8c51-d72d2184dfa5.png)
+
+Mesela:
+
+![image](https://user-images.githubusercontent.com/12685802/148172219-5ce47331-8e89-4887-84d3-30956fa0e350.png)
+
+Yani `(` karakteri `r` ile eşleşiyor gibi varsayabiliriz.
+
+Böyle devam ettiğimizde daha mantıklı sonuçlar çıkar:
+
+![image](https://user-images.githubusercontent.com/12685802/148172379-11f93f77-0149-49d8-9089-2175fe2322fb.png)
+
+```
+A good glass in the bishop's hostel in the devil's seat
+forty-one degrees and thirteen minutes northeast and by north
+main branch seventh limb east side
+shoot from the left eye of the death's-head
+a bee line from the tree through the shot fifty feet out
+```
+
+Haftaya algoritmik çözümü gösterilecek.
 
 ---
 
