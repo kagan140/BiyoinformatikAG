@@ -3,6 +3,6 @@
 
 ---
 
-[<< Geri](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta12.md)
+[<< Geri](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta11.md)
 
 [>> İleri](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta13.md)
