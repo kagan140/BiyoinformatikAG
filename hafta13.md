@@ -265,7 +265,7 @@ Yani aslında şu modeli bulmam gerek:
 
 ![image](https://user-images.githubusercontent.com/12685802/148571524-f0bac631-2c0b-4c48-9b4b-3e6f0498bed6.png)
 
-Bu modeller kişilerin karakter yazma ve biyoinformatikte sekansların sonuçlarıyla ilgili müthiş bir kullanım alanı var.
+Bu modeller kişilerin karakter yazma ve biyoinformatikte sekansların sonuçlarıyla ilgili müthiş bir kullanım alanı var. Ve buna eksik bilgiyle öğrenme denir.
 
 ---
 
