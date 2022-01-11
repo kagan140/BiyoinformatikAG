@@ -11,9 +11,9 @@
 
 ---
 
-**Smith Watermann algoritması:** İki sekans arasınadki örtüşen kısımları bulur. Local Alignment olarak da bilinir.
+**Smith Watermann algoritması:** İki sekans arasındaki örtüşen kısımları bulur. Local Alignment olarak da bilinir.
 
-**Needleman Wunsch algoritması** İki sekans arasınadki benzerliği bulur. Global Alignment olarak da bilniir. Longest common subsequence probleminin aynısı. Eşleşme, eşleşmeme ve gap durumlarında skor koşulları ayrıca belirlenir. (PAM, BLOSUM matrisleri gibi)
+**Needleman Wunsch algoritması** İki sekans arasındaki benzerliği bulur. Global Alignment olarak da bilniir. Longest common subsequence probleminin aynısı. Eşleşme, eşleşmeme ve gap durumlarında skor koşulları ayrıca belirlenir. (PAM, BLOSUM matrisleri gibi)
 
 Her şey klasik dinamik programlama ile icra ediliyor.
 
