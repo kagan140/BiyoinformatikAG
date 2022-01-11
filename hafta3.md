@@ -35,27 +35,29 @@ Bu tarama sonrası prefix table adı verilen bir tablo üretilir. Atlamalar bu t
 
 ![image](https://user-images.githubusercontent.com/12685802/144749802-62bb4624-aa77-4e9c-9553-1d7d4e8cc807.png)
 
-İlk karakterimiz A, ne bir prefix (ön ek) ne de bir suffix (son ek) üretme şansımız var. Bu yüzden prefix değeri 0. Aslında pattern'in ilk karakterinin değeri her zaman 0dır.
-
 ![image](https://user-images.githubusercontent.com/12685802/144749817-2aea2c6f-400a-4068-9ee2-1cfc91afa19a.png)
 
-AC, prefix = A, suffix = C, ama bir eşleşme (ikisinde de bulunması gerekiyor) yok o yüzden değeri 0.
+İlk karakterimiz A, ne bir prefix (ön ek) ne de bir suffix (son ek) üretme şansımız var. Bu yüzden prefix değeri 0. Aslında pattern'in ilk karakterinin değeri her zaman 0dır.
 
 ![image](https://user-images.githubusercontent.com/12685802/144749873-af7d7c99-ed90-4b7a-9b4f-016598a2b2ce.png)
 
-ACA, olası prefixler A ve AC. Olası suffixler CA ve A. Bir eşleme var (ikisinde de A var) ve bu eşleşmenin uzunluğu 1 bu yüzden değeri 1.  
+AC, prefix = A, suffix = C, ama bir eşleşme (ikisinde de bulunması gerekiyor) yok o yüzden değeri 0.
 
 ![image](https://user-images.githubusercontent.com/12685802/144749936-eac72809-01cb-4407-b74c-0de1109033e0.png)
 
-ACAC, olası prefixler A, AC, ACA. Olası suffixler CAC, AC, C. Bir eşleşme var (AC) ve uzunluğu 2 (len(AC)) prefix tablosunda değeri 2
+ACA, olası prefixler A ve AC. Olası suffixler CA ve A. Bir eşleme var (ikisinde de A var) ve bu eşleşmenin uzunluğu 1 bu yüzden değeri 1.  
 
 ![image](https://user-images.githubusercontent.com/12685802/144750002-8f7dce83-18e3-47b5-bc13-92852c98c752.png)
 
-ACACA, olası prefixler A, AC, ACA, ACAC. Olası suffixler CACA, ACA, CA, A. İki eşleşme var, biri A diğeri ACA. Uzunluğu yüksek olanı alıyoruz. Prefix tablosundaki değerimiz 3.
+ACAC, olası prefixler A, AC, ACA. Olası suffixler CAC, AC, C. Bir eşleşme var (AC) ve uzunluğu 2 (len(AC)) prefix tablosunda değeri 2
 
 ![image](https://user-images.githubusercontent.com/12685802/144750108-b4c03c6e-77ee-4285-9f42-7ada465ab3a0.png)
 
+ACACA, olası prefixler A, AC, ACA, ACAC. Olası suffixler CACA, ACA, CA, A. İki eşleşme var, biri A diğeri ACA. Uzunluğu yüksek olanı alıyoruz. Prefix tablosundaki değerimiz 3.
+
 ACACAG ve ACACAGT durumlarında eşleşme yok değerleri bu yüzden 0.
+
+![image](https://user-images.githubusercontent.com/12685802/148974477-43282b43-8e86-4e76-a5a1-f40138c9501e.png)
 
 #### Şimdi algoritmayı kullanalım:
 
@@ -63,15 +65,27 @@ ACACAG ve ACACAGT durumlarında eşleşme yok değerleri bu yüzden 0.
 
 ACAT ACGACACAGT içerisinde ACACAGT arıyoruz.
 
-Eşleşme olmayan karakterden önceki karakterin prefix değerine bakıp eşleşen karakter sayısı kadar çıkarıyoruz. Bulduğumuz sonuç ilerleme sayımızdır. 
+Eşleşme olmayan karakterden önceki karakterin (örneğimizde C'den önce A geliyor) prefix değerine (A'nın prefix değeri 1) bakıp eşleşen karakter sayısı (3) kadar çıkarıyoruz. Bulduğumuz sonuç ilerleme sayımızdır. 
+
+- Eşleşme olmayan karakter: Örneğimizde C
+- Eşleşme olmayan karakterden önceki karakter: A
+- Eşleşme olmayan karakterden önceki karakterin prefix değeri: 1
+- Eşleşen karakter sayısı ACA -> `3`
+- İlerleme sayımız: 3 - 1 = `2`
 
 Örneklere bakalım:
 
 İlk üç karakter eşleşiyor.
 
-![image](https://user-images.githubusercontent.com/12685802/144750423-c8a02f0d-4de9-41d1-a092-21749b825d49.png)
+![image](https://user-images.githubusercontent.com/12685802/148977124-ff36cb98-48af-456e-a621-fd4bafa43cf1.png)
 
-Ama 4. karakter eşleşmediği için 3. karakterin (A) prefix tablosundaki değerine bakıyoruz. Değeri 1. Eşleşen karakter sayısı 3 (ACA). 3-1 = 2, bu sayede 2 adet atlama yapabiliriz.
+Ama 4. karakter eşleşmediği için 3. karakterin (A) prefix tablosundaki değerine bakıyoruz. 
+
+Değeri 1. 
+
+Eşleşen karakter sayısı 3 (ACA). 
+
+3-1 = 2, bu sayede 2 adet atlama yapabiliriz.
 
 ![image](https://user-images.githubusercontent.com/12685802/144750451-e4d9099d-dc34-41f3-94fa-4796d669060d.png)
 
