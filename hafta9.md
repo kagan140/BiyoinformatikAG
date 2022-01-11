@@ -91,7 +91,7 @@ Boyer Moore, KMP gibi algoritmalar ise pattern'i önişlemeye tabi tutuyolardı.
 
 Elimde metin var. Bu metinde tekrar eden örüntü var. Onu bulmalıyım. Ama ne aradığımızı dahi bilmiyoruz bu yüzden zor.
 
-Aradığımızı bilmeme sebebimiz mutasyonlar. 600 nükleotid uzunluğnuda olan 20 rastgele sekans arasında uzunluğu 15 olan implant örüntü var. Her örüntü en fazla 4 mutasyon içeriyor.
+Aradığımızı bilmeme sebebimiz mutasyonlar. 600 nükleotid uzunluğunda olan 20 rastgele sekans arasında uzunluğu 15 olan implant örüntü var. Her örüntü en fazla 4 mutasyon içeriyor.
 
 ![image](https://user-images.githubusercontent.com/12685802/145005642-e95ed05f-0bf9-4c44-87d6-4bca324083d6.png)
 
