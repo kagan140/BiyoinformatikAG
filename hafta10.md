@@ -76,7 +76,7 @@ Mesela yukarıda uydurduğumuz örneği tekrar ele alalım:
 - A C C D
 - A B C E
 
-İlk sütun için A:3, B:2, C:3, D:2, böylece 3 + 2 + 3 + 2 = **10**
+A:3, B:2, C:3, D:2, böylece 3 + 2 + 3 + 2 = **10**
 
 ### Entropi
 
