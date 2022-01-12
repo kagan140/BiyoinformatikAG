@@ -46,21 +46,12 @@ Hataları belirtmek ya da katkıda bulunmak için pull request atabilirsiniz.
 | |[Saklı Markov Modelleri](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta13.md#saklı-markov-modelleri)|
 | |[Örnek: The Dishonest Casino](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta13.md#örnek-the-dishonest-casino)|
 | |[Diğer İncelemeler / Problemler](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta13.md#diğer-i̇ncelemeler--problemler)|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+|[Hafta 14](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta14.md)| [Ayrık (Klasik) Markov Modeli](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta14.md#ayrık-klasik-markov-modeli)|
+| |[Subgraph Örnekleri](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta13.md#subgraph-örnekleri)|
+| |[Simple Minded Weather Example](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta14.md#simple-minded-weather-example)|
+| |[Coke vs Pepsi](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta14.md#coke-vs-pepsi)|
+| |[Örnekler](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta14.md#örnek-2)|
+| |[CpG Adaları](https://github.com/LIIIs4ma/BiyoinformatikAG/blob/main/hafta14.md#cpg-adaları)|
 
 ---
 
